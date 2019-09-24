@@ -66,9 +66,8 @@
 </div>
 </center>
 <div class="container authenticated" style="display:none">
-    Ticket booked under the name : <span id="user"></span>
-
-    <div>
+    Book tickets into Facebook under: <span id="user"></span>
+    <div class="p-2">
         <label>From:</label>
         <select>
             <option>Colombo</option>
@@ -77,7 +76,7 @@
             <option>Polgahawela</option>
         </select>
     </div>
-    <div>
+    <div class="p-2">
         <label>To:</label>
         <select>
             <option>Colombo</option>
@@ -86,7 +85,7 @@
             <option>Polgahawela</option>
         </select>
     </div>
-    <input type="submit">Submit</input>
+    <input type="submit"/>
 </div>
 <script type="text/javascript">
     $.get("/user", function(data) {
@@ -94,8 +93,6 @@
         $(".unauthenticated").hide()
         $(".authenticated").show()
     });
-
-}
 </script>
 </body>
 </html>
